@@ -1,144 +1,81 @@
 # SkillSwap-Connect
 A skill exchange and paid learning platform connecting learners and mentors
 
-📖 Project Description
-SkillSwap Connect is an all-inclusive online learning platform designed to connect learners and mentors through skill exchange and paid learning sessions. The platform enables users to learn new skills either by exchanging skills they already possess or by enrolling in paid mentorship sessions.
+1️⃣ Project Title
+SkillSwap Connect – A Skill Exchange & Paid Learning Platform
 
-The main goal of SkillSwap Connect is to promote collaborative learning, knowledge sharing, and accessible education, while also providing a secure financial transaction system for paid sessions.
+SkillSwap Connect is a web-based learning platform that connects learners and mentors, enabling users to learn new skills through skill exchange or paid learning sessions in a secure and collaborative environment.
 
-Learners can browse skills, request mentorship, and track request status, while mentors can offer professional skills, manage requests, and conduct learning sessions. An admin panel ensures platform safety, moderation, and smooth operations.
+2️⃣ Project Description
 
-🎯 Motivation
+SkillSwap Connect is an all-inclusive online learning platform designed to promote knowledge sharing, mentorship, and collaborative learning. The platform allows users to either exchange skills they already possess or participate in paid learning sessions when skill exchange is not available.
 
-The motivation behind building SkillSwap Connect was to:
+🔹 What the Application Does
 
-Create an affordable and flexible learning ecosystem
+Connects learners with mentors based on required skills
 
-Encourage skill-based knowledge sharing
+Supports skill-for-skill exchange as well as paid learning
 
-Reduce learning barriers for students and professionals
+Allows mentors to offer and manage professional skills
 
-Provide a secure and structured mentor–learner interaction platform
+Provides request tracking and real-time communication
 
-❓ Problem It Solves
+Includes an admin panel for moderation and platform control
 
-Difficulty finding affordable mentors
+🔹 Technologies Used
 
-Lack of platforms for skill-for-skill exchange
+Frontend: HTML, CSS, JavaScript
 
-Unsafe or unregulated paid learning platforms
+Backend: PHP
 
-Poor tracking of learning requests and communication
+Database: MySQL (skillswap_db)
 
-🧠 What I Learned
+Version Control: Git & GitHub
 
-User role–based system design (Learner, Mentor, Admin)
+These technologies were chosen for their reliability, ease of integration, and suitability for developing scalable web applications.
 
-Database design for skill requests and matching
+🔹 Challenges Faced
 
-Authentication and authorization handling
+Designing a role-based system (Learner, Mentor, Admin)
 
-Real-time communication basics
+Managing skill request workflows and statuses
 
-Secure transaction workflow concepts
+Ensuring secure authentication and access control
 
-Writing professional documentation (README)
+Coordinating teamwork using Git and GitHub
 
-⭐ What Makes This Project Stand Out
+🔹 Future Features
 
-Skill-for-skill exchange concept
+Real-time chat using WebSockets
 
-Paid and free learning combined in one platform
+Secure online payment gateway integration
 
-Intelligent skill matching system
+Skill rating and review system
 
-Admin moderation for platform safety
+Mobile-friendly and responsive UI
 
-Clean role-based feature separation
+3️⃣ Table of Contents (Optional)
 
-🧾 Table of Contents
+Project Title
 
 Project Description
 
-Features
+Installation & Setup
 
-User Types
-
-Installation
-
-Usage
-
-Screenshots
+How to Use
 
 Credits
 
 License
 
-🚀 Features
-🔐 Common Features (All Users)
+Contribution Guidelines
 
-User Registration & Secure Login
-
-Profile Management
-
-Skill Browsing & Search
-
-Skill Request Status Tracking (Pending / Accepted / Rejected)
-
-Basic Chat / Messaging System
-
-Notifications & Alerts
-
-👤 User Types
-
-User1 – Learner
-
-User2 – Mentor
-
-User3 – Admin
-
-🎓 Features of User1 – Learner
-
-Request skills to learn
-
-Browse available mentors
-
-Send skill exchange requests
-
-Track request status
-
-Communicate with mentors
-
-🧑‍🏫 Features of User2 – Mentor
-
-Offer professional skills
-
-View learner requests
-
-Accept or reject skill requests
-
-Manage offered skills (edit/delete)
-
-Communicate with learners
-
-🛡️ Features of User3 – Admin
-
-Approve or reject new users
-
-Monitor skill postings
-
-Resolve disputes and mismatches
-
-Manage users (edit, deactivate, delete)
-
-View overall platform activity
-
-🛠️ How to Install and Run the Project
+4️⃣ How to Install and Run the Project
 🔧 Requirements
 
 XAMPP / WAMP
 
-PHP 8+
+PHP 8 or later
 
 MySQL
 
@@ -146,44 +83,121 @@ Web Browser (Chrome recommended)
 
 📥 Installation Steps
 
-Clone the repository
+Clone the repository:
 
-git clone https://github.com/yourusername/skillswap-connect.git
+git clone https://github.com/your-username/skillswap-connect.git
 
 
 Move the project folder to:
 
-htdocs (for XAMPP)
+htdocs (XAMPP)
 
 
-Create a database named:
+Create a MySQL database named:
 
-skillswap_connect
-
-
-Import the provided .sql file into the database
-
-Configure database connection in:
-
-db.php
+skillswap_db
 
 
-Start Apache & MySQL from XAMPP
+Import the provided .sql file into skillswap_db.
+
+Configure database connection in db.php:
+
+$dbname = "skillswap_db";
+
+
+Start Apache and MySQL from XAMPP.
 
 Open browser and run:
 
-http://localhost/SkillSwap-Connect
+http://localhost/skillswap-connect
 
-🧑‍💻 How to Use the Project
+5️⃣ How to Use the Project
+🔹 Registration & Login
 
-Register as Learner or Mentor
+Users can register as Learner or Mentor
 
-Complete your profile
+Secure login system implemented
 
-Browse or offer skills
+🔹 Learner Usage
 
-Send or receive skill exchange requests
+Browse available skills
 
-Communicate via chat
+Request skills from mentors
 
-Admin manages approvals and disputes
+Track request status (Pending / Accepted / Rejected)
+
+Communicate with mentors
+
+🔹 Mentor Usage
+
+Offer professional skills
+
+View learner requests
+
+Accept or reject skill exchange or paid requests
+
+Manage offered skills
+
+🔹 Admin Usage
+
+Approve or reject users
+
+Monitor skill postings
+
+Manage users and resolve disputes
+
+Track overall platform activity
+
+📌 Screenshots of dashboards and workflows can be added here for better understanding.
+
+6️⃣ Include Credits
+👨‍💻 Project Team
+
+Ayon Kumar Bhowmick Ovi – Contributor
+
+Golam Iffat Rahman Farah – Contributor
+
+Mst. Sharaf Anika Esha – Contributor
+
+📚 References
+
+PHP & MySQL Official Documentation
+
+GitHub Documentation
+
+Online tutorials and academic resources
+
+8️⃣ How to Contribute to the Project
+
+Fork the repository
+
+Create a feature branch:
+
+git checkout -b feature/your-feature-name
+
+
+Commit changes with clear messages
+
+Push branch and create a Pull Request
+
+Wait for review and approval
+
+Contribution guidelines help maintain code quality and teamwork.
+
+ 9️⃣ Include Tests (Optional)
+
+Manual testing of user roles
+
+Request workflow testing
+
+Database validation testing
+
+Future versions may include automated unit and integration tests.
+
+⭐ Extra Notes
+
+Keep the README file up-to-date
+
+Follow Git branching and commit message conventions.
+
+Write documentation in English for global accessibility.
