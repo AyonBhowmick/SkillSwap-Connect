@@ -1,203 +1,113 @@
-# SkillSwap-Connect
-A skill exchange and paid learning platform connecting learners and mentors
-
-1️⃣ Project Title
-SkillSwap Connect – A Skill Exchange & Paid Learning Platform
-
-SkillSwap Connect is a web-based learning platform that connects learners and mentors, enabling users to learn new skills through skill exchange or paid learning sessions in a secure and collaborative environment.
-
-2️⃣ Project Description
-
-SkillSwap Connect is an all-inclusive online learning platform designed to promote knowledge sharing, mentorship, and collaborative learning. The platform allows users to either exchange skills they already possess or participate in paid learning sessions when skill exchange is not available.
-
-🔹 What the Application Does
-
-Connects learners with mentors based on required skills
-
-Supports skill-for-skill exchange as well as paid learning
-
-Allows mentors to offer and manage professional skills
-
-Provides request tracking and real-time communication
-
-Includes an admin panel for moderation and platform control
-
-🔹 Technologies Used
-
-Frontend: HTML, CSS, JavaScript
-
-Backend: PHP
-
-Database: MySQL (skillswap_db)
-
-Version Control: Git & GitHub
-
-These technologies were chosen for their reliability, ease of integration, and suitability for developing scalable web applications.
-
-🔹 Challenges Faced
-
-Designing a role-based system (Learner, Mentor, Admin)
-
-Managing skill request workflows and statuses
-
-Ensuring secure authentication and access control
-
-Coordinating teamwork using Git and GitHub
-
-🔹 Future Features
-
-Real-time chat using WebSockets
-
-Secure online payment gateway integration
-
-Skill rating and review system
-
-Mobile-friendly and responsive UI
-
-3️⃣ Table of Contents (Optional)
-
-Project Title
-
-Project Description
-
-Installation & Setup
-
-How to Use
-
-Credits
-
-License
-
-Contribution Guidelines
-
-4️⃣ How to Install and Run the Project
-🔧 Requirements
-
-XAMPP / WAMP
-
-PHP 8 or later
-
-MySQL
-
-Web Browser (Chrome recommended)
-
-📥 Installation Steps
-
-Clone the repository:
-
-git clone https://github.com/your-username/skillswap-connect.git
-
-
-Move the project folder to:
-
-htdocs (XAMPP)
-
-
-Create a MySQL database named:
-
-skillswap_db
-
-
-Import the provided .sql file into skillswap_db.
-
-Configure database connection in db.php:
-
-$dbname = "skillswap_db";
-
-
-Start Apache and MySQL from XAMPP.
-
-Open browser and run:
-
-http://localhost/skillswap-connect
-
-5️⃣ How to Use the Project
-🔹 Registration & Login
-
-Users can register as Learner or Mentor
-
-Secure login system implemented
-
-🔹 Learner Usage
-
-Browse available skills
-
-Request skills from mentors
-
-Track request status (Pending / Accepted / Rejected)
-
-Communicate with mentors
-
-🔹 Mentor Usage
-
-Offer professional skills
-
-View learner requests
-
-Accept or reject skill exchange or paid requests
-
-Manage offered skills
-
-🔹 Admin Usage
-
-Approve or reject users
-
-Monitor skill postings
-
-Manage users and resolve disputes
-
-Track overall platform activity
-
-📌 Screenshots of dashboards and workflows can be added here for better understanding.
-
-6️⃣ Include Credits
-👨‍💻 Project Team
-
-Ayon Kumar Bhowmick Ovi – Contributor
-
-Golam Iffat Rahman Farah – Contributor
-
-Mst. Sharaf Anika Esha – Contributor
-
-📚 References
-
-PHP & MySQL Official Documentation
-
-GitHub Documentation
-
-Online tutorials and academic resources
-
-8️⃣ How to Contribute to the Project
-
-Fork the repository
-
-Create a feature branch:
-
-git checkout -b feature/your-feature-name
-
-
-Commit changes with clear messages
-
-Push branch and create a Pull Request
-
-Wait for review and approval
-
-Contribution guidelines help maintain code quality and teamwork.
-
- 9️⃣ Include Tests (Optional)
-
-Manual testing of user roles
-
-Request workflow testing
-
-Database validation testing
-
-Future versions may include automated unit and integration tests.
-
-⭐ Extra Notes
-
-Keep the README file up-to-date
-
-Follow Git branching and commit message conventions.
-
-Write documentation in English for global accessibility.
+# SkillSwap Connect
+
+A web-based **skill exchange and paid learning platform** that connects learners and mentors. Users can learn new skills by exchanging skills they already have, or through paid learning sessions when an exchange isn't available.
+
+---
+
+## ✨ Features
+
+### 👩‍🎓 Learner
+- Browse available skills
+- Request a skill from a mentor (exchange or paid)
+- Track request status: Pending / Accepted / Rejected
+- Communicate with mentors
+- Get a certificate after completing a course
+
+### 🧑‍🏫 Mentor
+- Offer and manage professional skills
+- View learner requests
+- Accept or reject exchange and paid requests
+
+### 🛡️ Admin
+- Approve or reject users
+- Manage skills and monitor skill postings
+- Review requests and resolve disputes
+- Track overall platform activity
+
+### 🔐 General
+- Sign up as Learner or Mentor, with login and password recovery
+- Role-based access (Learner, Mentor, Admin)
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** PHP
+- **Database:** MySQL (`skillswap_db`)
+- **Tools:** XAMPP, Git & GitHub
+
+---
+
+## 🚀 How to Run
+
+**Requirements:** XAMPP (or WAMP) with PHP 8+, MySQL, and a web browser.
+
+1. Clone the repository into XAMPP's `htdocs` folder:
+   ```bash
+   cd C:\xampp\htdocs
+   git clone https://github.com/AyonBhowmick/SkillSwap-Connect.git
+   ```
+2. Start **Apache** and **MySQL** from the XAMPP Control Panel.
+3. Open `http://localhost/phpmyadmin` and create a database named:
+   ```
+   skillswap_db
+   ```
+4. Open the **SQL** tab of `skillswap_db`, paste the contents of the `sql_query` file, and run it to create the tables.
+5. Check the database settings in `db.php`:
+   ```php
+   $host = "localhost";
+   $user = "root";
+   $pass = "";
+   $dbname = "skillswap_db";
+   ```
+6. Open the project in your browser:
+   ```
+   http://localhost/SkillSwap-Connect
+   ```
+
+---
+
+## 📸 Screenshots
+
+| | |
+|---|---|
+| ![Screenshot 1](SS/Screenshot%202026-10-03%20033230.png) | ![Screenshot 2](SS/Screenshot%202026-10-03%20033302.png) |
+| ![Screenshot 3](SS/Screenshot%202026-10-03%20033317.png) | ![Screenshot 4](SS/Screenshot%202026-10-03%20033329.png) |
+| ![Screenshot 5](SS/Screenshot%202026-10-03%20033424.png) | ![Screenshot 6](SS/Screenshot%202026-10-03%20033450.png) |
+| ![Screenshot 7](SS/Screenshot%202026-10-03%20033518.png) | ![Screenshot 8](SS/Screenshot%202026-10-03%20033641.png) |
+| ![Screenshot 9](SS/Screenshot%202026-10-03%20033710.png) | |
+
+---
+
+## 📂 Project Files
+| File | Purpose |
+|---|---|
+| `index.php` | Home page |
+| `signup.php`, `login.php`, `logout.php`, `forgot_password.php` | Authentication |
+| `learner.php`, `browser.php` | Learner dashboard and skill browsing |
+| `mentor.php` | Mentor dashboard |
+| `admin.php`, `admin_users.php`, `admin_manage_skills.php`, `admin_requests.php` | Admin panel |
+| `certificate.php` | Certificate generation |
+| `db.php` | Database connection |
+| `sql_query` | SQL to create the database tables |
+
+---
+
+## 🧩 Challenges
+- Designing a role-based system (Learner, Mentor, Admin)
+- Managing skill request workflows and statuses
+- Secure authentication and access control
+- Coordinating teamwork with Git and GitHub
+
+## 🔮 Future Improvements
+- Real-time chat using WebSockets
+- Online payment gateway integration
+- Skill rating and review system
+- Fully responsive, mobile-friendly UI
+
+---
+
+## 👥 Team
+- Ayon Kumar Bhowmick Ovi
+- Golam Iffat Rahman Farah
+- Mst. Sharaf Anika Esha
